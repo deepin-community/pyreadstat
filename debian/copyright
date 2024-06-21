@@ -1,22 +1,69 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: template-repository
-Source: https://github.com/deepin-community/template-repository
+Upstream-Name: pyreadstat
+Upstream-Contact: Otto Fajardo https://github.com/ofajardo
+Source: https://github.com/Roche/pyreadstat
 
 Files: *
-Copyright: 2023 Tsic404 <liuheng@deepin.org>
-License: GPL-2+
- This package is free software; you can redistribute it and/or modify
- it under the terms of the GNU General Public License as published by
- the Free Software Foundation; either version 2 of the License, or
- (at your option) any later version.
+Copyright: 2018 Hoffmann-La Roche
+License: Apache-2.0
+
+Files: debian/*
+Copyright: 2023 © Joost van Baal-Ilić <joostvb@debian.org>
+License: Apache-2.0
+
+Files: src/*
+Copyright: 2013-2016 Evan Miller
+License: MIT
+
+Files:
+ src/CKHashTable.c
+Copyright:
+ 2010-2020 Evan Miller
+ (c) 2012 Jean-Philippe Aumasson <jeanphilippe.aumasson@gmail.com>
+ (c) 2012 Daniel J. Bernstein <djb@cr.yp.to>
+License: PD and CC0-1.0 and Apache-2.0
+
+Files:
+ src/CKHashTable.h
+Copyright: 2010-2020 Evan Miller
+License: MIT
+
+
+License: Apache-2.0
+ On Debian systems, the complete text of version 2.0 of the Apache
+ License can be found in `/usr/share/common-licenses/Apache-2.0'.
+
+
+License: PD
+ To the extent possible under law, the author(s) have dedicated all copyright
+ and related and neighboring rights to this software to the public domain
+ worldwide. This software is distributed without any warranty.
+
+
+License: CC0-1.0
+ You should have received a copy of the CC0 Public Domain Dedication along with
+ this software. If not, see <http://creativecommons.org/publicdomain/zero/1.0/>.
  .
- This package is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
+ On Debian systems, the complete text of version 1.0 of the Creative Commons
+ Legal Code can be found in `/usr/share/common-licenses/CC0-1.0'.
+
+
+License: MIT
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
  .
- You should have received a copy of the GNU General Public License
- along with this program. If not, see <https://www.gnu.org/licenses/>
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
  .
- On Debian systems, the complete text of the GNU General
- Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ THE SOFTWARE.
+

@@ -1,5 +1,59 @@
-template-repository (1.0-1) unstable; urgency=medium
+pyreadstat (1.2.6-1) unstable; urgency=medium
 
-  * Initial release
+  * Team upload.
+  * New upstream release.
+  * Upload to unstable.
+  * debian/rules:
+    + Drop --with python3 parameter, use dh-sequence-python3 instead.
+    + Drop incorrect PYBUILD_NAME override.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Boyuan Yang <byang@debian.org>  Wed, 03 Jan 2024 13:09:56 -0500
+
+pyreadstat (1.2.5-1~exp1) experimental; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * debian/control: Require cython 3.x. (Closes: #1053691, #1056847)
+  * debian/clean: Clean up post-build artifacts.
+
+ -- Boyuan Yang <byang@debian.org>  Mon, 27 Nov 2023 23:36:02 -0500
+
+pyreadstat (1.2.2-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Upload to unstable.
+  * debian/control:
+    + Fix FTBFS by adding missing build-dep zlib1g-dev, python3-all-dev.
+    + Bump Standards-Version to 4.6.2.
+    + Replace obsolete Debian Python Modules Team uploader with
+      Debian Python Team.
+    + Replace incorrect python (python2) substvars with python3
+      substvars.
+
+ -- Boyuan Yang <byang@debian.org>  Sun, 23 Jul 2023 16:32:49 -0400
+
+pyreadstat (1.2.1-1) experimental; urgency=medium
+
+  * Upload to experimental.
+  * Prepare for cython:
+    - d/control: add cython3 build-depends,
+    - d/rules: avoid running cythonize on setup.py clean.
+  * d/control: add python3-pandas build-depends, for build-time tests.
+    NB: module 'pandas' needs to supply attribute 'Float64Dtype', or the
+    test will fail.  python3-pandas 1.5.3 as shipped with Debian 12/bookworm
+    is known to work; python3-pandas 1.1.5 as shipped with Debian 11/bullseye
+    is known to fail.
+  * d/control: arch any: we ship .so-files.
+  * d/control: add ${shlibs:Depends} to depends.
+  * d/copyright: added.
+  * d/watch: thanks pypi.debian.net.
+  * Initial release (closes: #1033971).
+
+ -- Joost van Baal-Ilić <joostvb@debian.org>  Tue, 11 Apr 2023 10:33:34 +0200
+
+pyreadstat (1.2.1-0.1) unstable; urgency=medium
+
+  * Initial skeleton.
+
+ -- Joost van Baal-Ilić <joostvb@debian.org>  Thu, 06 Apr 2023 11:24:16 +0200
